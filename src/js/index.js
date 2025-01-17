@@ -32,7 +32,6 @@ class gameInit {
             } while (random === randomDuplicate)
             boxs[random].appendChild(imgCreate)
             randomDuplicate = random
-            console.log(random)
         }, 1000);
     }
 }
