@@ -16,7 +16,7 @@
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! .././index.html */ \"./src/index.html\");\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/main.css */ \"./src/css/main.css\");\n\n\n\n//# sourceURL=webpack://dom/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! .././index.html */ \"./src/index.html\");\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/main.css */ \"./src/css/main.css\");\n/* harmony import */ var _img_goblin_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/goblin.png */ \"./src/img/goblin.png\");\nfunction _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError(\"Cannot call a class as a function\"); }\nfunction _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, \"value\" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }\nfunction _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, \"prototype\", { writable: !1 }), e; }\nfunction _toPropertyKey(t) { var i = _toPrimitive(t, \"string\"); return \"symbol\" == _typeof(i) ? i : i + \"\"; }\nfunction _toPrimitive(t, r) { if (\"object\" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || \"default\"); if (\"object\" != _typeof(i)) return i; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (\"string\" === r ? String : Number)(t); }\n\n\n\nvar gameInit = /*#__PURE__*/function () {\n  function gameInit(element) {\n    _classCallCheck(this, gameInit);\n    this._element = Math.pow(element, 2);\n  }\n  return _createClass(gameInit, [{\n    key: \"buildField\",\n    value: function buildField() {\n      var playingField = document.querySelector('.main');\n      for (var i = 0; i < this._element; i++) {\n        var cell = document.createElement('div');\n        cell.classList.add('box');\n        playingField.appendChild(cell);\n      }\n      this.changePosition();\n    }\n  }, {\n    key: \"changePosition\",\n    value: function changePosition() {\n      var _this = this;\n      var randomDuplicate = null;\n      setInterval(function () {\n        var random = Math.round(Math.random() * _this._element);\n        if (random === randomDuplicate) {\n          random = Math.round(Math.random() * _this._element);\n        }\n        if (randomDuplicate >= 0) {}\n        var imgCreate = document.createElement('img');\n        imgCreate.src = '../img/goblin.png';\n        randomDuplicate = random;\n      }, 1000);\n    }\n  }]);\n}();\ndocument.addEventListener('DOMContentLoaded', function () {\n  var game = new gameInit(4);\n  game.buildField();\n});\n\n//# sourceURL=webpack://dom/./src/js/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Imports\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./img/goblin.png */ \"./src/img/goblin.png\"), __webpack_require__.b);\n// Module\nvar code = `<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <main class=\"main\">\r\n        <div class=\"box\">\r\n            <img src=\"${___HTML_LOADER_IMPORT_0___}\" alt=\"Гоблин\">\r\n        </div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n        <div class=\"box\"></div>\r\n    </main>\r\n</body>\r\n</html>`;\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://dom/./src/index.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = `<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <main class=\"main\">\r\n    </main>\r\n</body>\r\n</html>`;\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://dom/./src/index.html?");
 
 /***/ }),
 
@@ -75,9 +75,6 @@ eval("module.exports = __webpack_require__.p + \"src/img/goblin.png\";\n\n//# so
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
@@ -141,32 +138,6 @@ eval("module.exports = __webpack_require__.p + \"src/img/goblin.png\";\n\n//# so
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/
